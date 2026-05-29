@@ -15,12 +15,22 @@ if (toggle && navLinks) {
 
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
-const links = document.querySelectorAll('.nav-links a');
+const navLinks_list = document.querySelectorAll('.nav-links a');
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      links.forEach(link => {
+      // Update nav links
+      navLinks_list.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href')?.includes(entry.target.id)) {
+          link.classList.add('active');
+        }
+      });
+      
+      // Update sidebar links
+      sidebarLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href')?.includes(entry.target.id)) {
           link.classList.add('active');

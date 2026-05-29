@@ -5,6 +5,10 @@ layout: default
 <!-- ======= HERO / ABOUT ======= -->
 <section id="about" class="hero">
   <div class="hero-inner">
+    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
+       alt="{{ site.author.name }}" 
+       class="hero-photo" />
+    
     <div class="hero-text">
       <p class="hero-label">DPhil Candidate · University of Oxford</p>
       <h1 class="hero-name">{{ site.author.name }}</h1>
@@ -17,6 +21,12 @@ layout: default
           <a href="https://www.politics.ox.ac.uk/people/prof-petra-schleitere/" target="_blank">Prof. Petra Schleitere</a> and affiliated with the 
           <a href="https://www.politics.ox.ac.uk/" target="_blank">Department of Politics and International Relations</a>.
         </p>
+      </div>
+
+      <div class="chips">
+        <span class="chip teal">{{ site.author.college }}</span>
+        <span class="chip">Comparative Politics</span>
+        <span class="chip">Political Economy</span>
       </div>
 
       <div class="hero-links">
@@ -52,10 +62,6 @@ layout: default
         {% endif %}
       </div>
     </div>
-
-    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
-       alt="{{ site.author.name }}" 
-       class="hero-photo" />
   </div>
 </section>
 
