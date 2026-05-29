@@ -468,6 +468,22 @@ html.light-theme .light-bulb {
   color: var(--accent);
 }
 
+.project-year {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: var(--ff-sans);
+  margin: 0.5rem 0 0.75rem 0;
+  font-weight: 500;
+}
+
+.project-publisher {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-family: var(--ff-sans);
+  margin: 0.25rem 0 0.75rem 0;
+  font-weight: 500;
+}
+
 /* --- Teaching --- */
 .teaching-list {
   display: flex;
