@@ -1,21 +1,77 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikhail Korneev</title>
+  <meta name="description" content="DPhil Candidate at the University of Oxford" />
 
-<!-- ======= HERO / ABOUT ======= -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Mikhail Korneev | DPhil Candidate at the University of Oxford</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Mikhail Korneev" />
+<meta name="author" content="Mikhail Korneev" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="DPhil Candidate at the University of Oxford" />
+<meta name="twitter:description" property="og:description" content="DPhil Candidate at the University of Oxford" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Mikhail Korneev" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Mikhail Korneev" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Mikhail Korneev"},"description":"DPhil Candidate at the University of Oxford","headline":"Mikhail Korneev","name":"Mikhail Korneev","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="nav-name">Mikhail Korneev</a>
+        <ul class="nav-links">
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#teaching">Teaching</a></li>
+          <li><a href="/#news">News</a></li>
+          <li><a href="/assets/cv.pdf" target="_blank">CV</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <div class="controls">
+          <!-- Retro light switch theme toggle -->
+          <button id="theme-switch" class="theme-switch" aria-pressed="false" aria-label="Toggle theme">
+            <span class="switch-face" aria-hidden="true"></span>
+          </button>
+          <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <div class="main-content">
+        <!-- ======= HERO / ABOUT ======= -->
 <section id="about" class="hero">
   <div class="hero-inner">
-    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
-       alt="{{ site.author.name }}" 
+    <img src="/assets/images/photo.jpg" 
+       alt="Mikhail Korneev" 
        class="hero-photo" />
     
     <div class="hero-text">
       <p class="hero-label">DPhil Candidate · University of Oxford</p>
-      <h1 class="hero-name">{{ site.author.name }}</h1>
-      <p class="hero-position">{{ site.author.department }}, {{ site.author.college }}</p>
+      <h1 class="hero-name">Mikhail Korneev</h1>
+      <p class="hero-position">Department of Politics and International Relations, Reuben College</p>
 
       <div class="hero-bio">
-        <p>{{ site.author.bio }}</p>
+        <p>I am a DPhil candidate in Politics at the University of Oxford,  affiliated with Reuben College. My research sits at the intersection  of political economy and comparative politics, with a focus on democratic innovations.
+</p>
         <p>
           I am supervised by 
           <a href="https://www.politics.ox.ac.uk/people/prof-petra-schleitere/" target="_blank">Prof. Petra Schleitere</a> and affiliated with the 
@@ -24,36 +80,24 @@ layout: default
       </div>
 
       <div class="hero-links">
-        {% if site.author.email %}
-        <a href="mailto:{{ site.author.email }}" class="hero-link">
+        
+        <a href="mailto:mikhail.korneev@reuben.ox.ac.uk" class="hero-link">
           ✉ Email
         </a>
-        {% endif %}
-        {% if site.author.google_scholar %}
-        <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank" class="hero-link">
-          Scholar
-        </a>
-        {% endif %}
-        {% if site.author.twitter %}
-        <a href="https://x.com/{{ site.author.twitter }}" target="_blank" class="hero-link">
-          𝕏 Twitter
-        </a>
-        {% endif %}
-        {% if site.author.bluesky %}
-        <a href="https://bsky.app/profile/{{ site.author.bluesky }}" target="_blank" class="hero-link">
-          Bluesky
-        </a>
-        {% endif %}
-        {% if site.author.github %}
-        <a href="https://github.com/{{ site.author.github }}" target="_blank" class="hero-link">
+        
+        
+        
+        
+        
+        <a href="https://github.com/mik-kor" target="_blank" class="hero-link">
           GitHub
         </a>
-        {% endif %}
-        {% if site.author.cv_url %}
-        <a href="{{ site.author.cv_url }}" target="_blank" class="hero-link">
+        
+        
+        <a href="/assets/cv.pdf" target="_blank" class="hero-link">
           ↓ CV
         </a>
-        {% endif %}
+        
       </div>
     </div>
   </div>
@@ -105,7 +149,7 @@ layout: default
         <p class="project-desc">
           Description of a working paper, co-authored project, or research collaboration. 
           Include co-authors or institutional partners if relevant.
-            <a href="{{ '/assets/argument_paper_OAPN.pdf' | relative_url }}" target="_blank" download class="project-link">Argument Paper (PDF)</a>.
+            <a href="/assets/argument_paper_OAPN.pdf" target="_blank" download class="project-link">Argument Paper (PDF)</a>.
         </p>
         <!--<div class="project-tags">
           <span class="tag">Tag One</span>
@@ -151,13 +195,13 @@ layout: default
       <div>
         <p class="contact-label">Email</p>
         <p class="contact-value">
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+          <a href="mailto:mikhail.korneev@reuben.ox.ac.uk">mikhail.korneev@reuben.ox.ac.uk</a>
         </p>
       </div>
       <div>
         <p class="contact-label">Address</p>
         <p class="contact-value">
-          {{ site.author.department }}<br />
+          Department of Politics and International Relations<br />
           University of Oxford<br />
           Oxford OX1 3UQ, UK
         </p>
@@ -165,17 +209,29 @@ layout: default
       <div>
         <p class="contact-label">Social</p>
         <p class="contact-value">
-          {% if site.author.twitter %}<a href="https://x.com/{{ site.author.twitter }}" target="_blank">@{{ site.author.twitter }} on X</a><br />{% endif %}
-          {% if site.author.bluesky %}<a href="https://bsky.app/profile/{{ site.author.bluesky }}" target="_blank">{{ site.author.bluesky }} on Bluesky</a>{% endif %}
+          
+          
         </p>
       </div>
       <div>
         <p class="contact-label">Profiles</p>
         <p class="contact-value">
-          {% if site.author.google_scholar %}<a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank">Google Scholar</a><br />{% endif %}
-          {% if site.author.orcid %}<a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID {{ site.author.orcid }}</a>{% endif %}
+          
+          
         </p>
       </div>
     </div>
   </div>
 </section>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Mikhail Korneev &middot; University of Oxford</p>
+    </footer>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
