@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} · {{ site.author.name }}{% else %}{{ site.author.name }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+  {% seo %}
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}" class="nav-name">{{ site.author.name }}</a>
+        <ul class="nav-links">
+          <li><a href="{{ '/' | relative_url }}#research">Research</a></li>
+          <li><a href="{{ '/' | relative_url }}#teaching">Teaching</a></li>
+          <li><a href="{{ '/' | relative_url }}#news">News</a></li>
+          <li><a href="{{ site.author.cv_url }}" target="_blank">CV</a></li>
+          <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>© {{ 'now' | date: "%Y" }} {{ site.author.name }} &middot; University of Oxford</p>
+    </footer>
+  </div>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+---
+layout: default
+---
+
+<!-- ======= HERO / ABOUT ======= -->
+<section id="about" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-label">DPhil Candidate · University of Oxford</p>
+      <h1 class="hero-name">{{ site.author.name }}</h1>
+      <p class="hero-position">{{ site.author.department }}, {{ site.author.college }}</p>
+
+      <div class="hero-bio">
+        <p>{{ site.author.bio }}</p>
+        <p>
+          I am supervised by 
+          <a href="#">Prof. Supervisor Name</a> and affiliated with the 
+          <a href="https://www.politics.ox.ac.uk/" target="_blank">Department of Politics and International Relations</a>.
+        </p>
+      </div>
+
+      <div class="hero-links">
+        {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}" class="hero-link">
+          ✉ Email
+        </a>
+        {% endif %}
+        {% if site.author.google_scholar %}
+        <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank" class="hero-link">
+          Scholar
+        </a>
+        {% endif %}
+        {% if site.author.twitter %}
+        <a href="https://x.com/{{ site.author.twitter }}" target="_blank" class="hero-link">
+          𝕏 Twitter
+        </a>
+        {% endif %}
+        {% if site.author.bluesky %}
+        <a href="https://bsky.app/profile/{{ site.author.bluesky }}" target="_blank" class="hero-link">
+          Bluesky
+        </a>
+        {% endif %}
+        {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" class="hero-link">
+          GitHub
+        </a>
+        {% endif %}
+        {% if site.author.cv_url %}
+        <a href="{{ site.author.cv_url }}" target="_blank" class="hero-link">
+          ↓ CV
+        </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Replace with your photo: assets/images/photo.jpg -->
+    <div class="hero-photo-placeholder" aria-hidden="true">
+      {{ site.author.name | slice: 0 }}
+    </div>
+    <!-- Uncomment once you add your photo:
+    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
+         alt="{{ site.author.name }}" 
+         class="hero-photo" />
+    -->
+  </div>
+</section>
+
+<!-- ======= NEWS ======= -->
+<section id="news" class="section">
+  <div class="section-header">
+    <h2 class="section-title">News</h2>
+  </div>
+  <div class="section-body">
+    <ul class="news-list">
+      <li class="news-item">
+        <span class="news-date">May 2025</span>
+        <span class="news-text">Presented paper at <a href="#">Conference Name</a> in City — <em>paper title here</em>.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jan 2025</span>
+        <span class="news-text">Awarded the <a href="#">Scholarship/Grant Name</a> for the academic year 2024–25.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Oct 2024</span>
+        <span class="news-text">Started DPhil at Oxford, based at {{ site.author.college }}.</span>
+      </li>
+      <!-- Add more news items above this line -->
+    </ul>
+  </div>
+</section>
+
+<!-- ======= RESEARCH ======= -->
+<section id="research" class="section">
+  <div class="section-header">
+    <h2 class="section-title">Research</h2>
+  </div>
+  <div class="section-body">
+    <p class="research-intro">
+      My DPhil thesis examines [broad research question], with a focus on [specific angle]. 
+      I draw on methods from [e.g. comparative politics, computational social science, qualitative analysis] 
+      to study [phenomenon] in the context of [cases/regions/time period].
+    </p>
+
+    <div class="project-list">
+
+      <div class="project-card">
+        <h3 class="project-title">DPhil Thesis: [Working Title]</h3>
+        <p class="project-desc">
+          A brief description of your thesis project — what question it addresses, 
+          why it matters, and what your argument or approach is. Two to three sentences is plenty.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Comparative Politics</span>
+          <span class="tag">Your Method</span>
+          <span class="tag">Your Region</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">Working Paper / Side Project Title</h3>
+        <p class="project-desc">
+          Description of a working paper, co-authored project, or research collaboration. 
+          Include co-authors or institutional partners if relevant.
+          <a href="#">Draft available here</a>.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Tag One</span>
+          <span class="tag">Tag Two</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= TEACHING ======= -->
+<section id="teaching" class="section">
+  <div class="section-header">
+    <h2 class="section-title">Teaching</h2>
+  </div>
+  <div class="section-body">
+    <p class="research-intro" style="margin-bottom:1.5rem;">
+      I have tutored and demonstated for the following courses at Oxford.
+    </p>
+
+    <div class="teaching-list">
+
+      <div class="teaching-item">
+        <div>
+          <p class="teaching-course">Introduction to Comparative Politics</p>
+          <p class="teaching-role">Tutor, Undergraduate, {{ site.author.college }}</p>
+        </div>
+        <span class="teaching-year">2024–25</span>
+      </div>
+
+      <div class="teaching-item">
+        <div>
+          <p class="teaching-course">Quantitative Methods in Political Science</p>
+          <p class="teaching-role">Teaching Assistant, Graduate</p>
+        </div>
+        <span class="teaching-year">2024–25</span>
+      </div>
+
+      <div class="teaching-item">
+        <div>
+          <p class="teaching-course">Politics of [Your Area]</p>
+          <p class="teaching-role">Seminar Leader, Undergraduate</p>
+        </div>
+        <span class="teaching-year">2023–24</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact" class="section">
+  <div class="section-header">
+    <h2 class="section-title">Contact</h2>
+  </div>
+  <div class="section-body">
+    <div class="contact-grid">
+      <div>
+        <p class="contact-label">Email</p>
+        <p class="contact-value">
+          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </p>
+      </div>
+      <div>
+        <p class="contact-label">Address</p>
+        <p class="contact-value">
+          {{ site.author.department }}<br />
+          University of Oxford<br />
+          Oxford OX1 3UQ, UK
+        </p>
+      </div>
+      <div>
+        <p class="contact-label">Social</p>
+        <p class="contact-value">
+          {% if site.author.twitter %}<a href="https://x.com/{{ site.author.twitter }}" target="_blank">@{{ site.author.twitter }} on X</a><br />{% endif %}
+          {% if site.author.bluesky %}<a href="https://bsky.app/profile/{{ site.author.bluesky }}" target="_blank">{{ site.author.bluesky }} on Bluesky</a>{% endif %}
+        </p>
+      </div>
+      <div>
+        <p class="contact-label">Profiles</p>
+        <p class="contact-value">
+          {% if site.author.google_scholar %}<a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank">Google Scholar</a><br />{% endif %}
+          {% if site.author.orcid %}<a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID {{ site.author.orcid }}</a>{% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

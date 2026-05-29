@@ -1,0 +1,39 @@
+title: "Mikhail Korneev"
+description: "DPhil Candidate at the University of Oxford"
+url: "https://mik-kor.github.io"
+baseurl: ""
+
+# Author Info
+author:
+  name: "Mikhail Korneev"
+  title: "DPhil Candidate"
+  department: "Department of Politics and International Relations"
+  university: "University of Oxford"
+  college: "Reuben College"
+  email: "mikhail.korneev@reuben.ox.ac.uk"
+  github: "mik-kor"
+  cv_url: "/assets/cv.pdf"
+  bio: >
+    I am a DPhil candidate in Politics at the University of Oxford, 
+    affiliated with Reuben College. My research sits at the intersection 
+    of political economy and comparatice politics, with a focus on democratic innovations.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+kramdown:
+  auto_ids: true
+  input: GFM
