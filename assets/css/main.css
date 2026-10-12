@@ -428,6 +428,23 @@ html.light-theme .light-bulb {
   border-radius: 0;
 }
 
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.project-card-link:hover,
+.project-card-link:focus-visible {
+  background: color-mix(in srgb, var(--bg-surface), var(--accent) 10%);
+  border-left-color: var(--text-primary);
+}
+
+.project-card-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .project-title {
   font-family: var(--ff-display);
   font-size: 16px;
@@ -665,4 +682,126 @@ hr.divider {
 .hero,
 .section {
   animation: fadeUp 0.6s ease both;
+}
+
+/* --- Interactive Walking Duck --- */
+#walking-duck {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  cursor: pointer;
+  user-select: none;
+  z-index: 9999;
+  pointer-events: auto;
+  transform-origin: center bottom;
+  transition: filter 0.1s ease;
+}
+
+#walking-duck:hover {
+  filter: brightness(1.2);
+}
+
+.duck-body {
+  position: relative;
+  width: 50px;
+  height: 40px;
+}
+
+.duck-head {
+  position: absolute;
+  top: 2px;
+  left: 28px;
+  width: 18px;
+  height: 16px;
+  background: #f5e6d3;
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.duck-eye {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  width: 4px;
+  height: 4px;
+  background: #1a1a1a;
+  border-radius: 50%;
+}
+
+.duck-bill {
+  position: absolute;
+  top: 7px;
+  left: -6px;
+  width: 8px;
+  height: 4px;
+  background: #ff9500;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+}
+
+.duck-body-main {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  width: 28px;
+  height: 18px;
+  background: #f5e6d3;
+  border: 2px solid #1a1a1a;
+  border-radius: 60% 60% 40% 40%;
+  z-index: 2;
+}
+
+.duck-wing {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+  width: 14px;
+  height: 12px;
+  background: #e6d4b8;
+  border: 1px solid #1a1a1a;
+  border-radius: 50% 20% 20% 50%;
+  z-index: 1;
+}
+
+.duck-tail {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  width: 10px;
+  height: 14px;
+  background: #f5e6d3;
+  border: 1px solid #1a1a1a;
+  border-radius: 0 20% 20% 0;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+
+.duck-leg {
+  position: absolute;
+  bottom: -2px;
+  width: 2px;
+  height: 6px;
+  background: #ff9500;
+  border: 1px solid #1a1a1a;
+}
+
+.duck-leg-1 {
+  left: 18px;
+}
+
+.duck-leg-2 {
+  left: 28px;
+}
+
+.duck-shadow {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  filter: blur(2px);
 }

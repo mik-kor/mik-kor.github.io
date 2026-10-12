@@ -468,6 +468,22 @@ html.light-theme .light-bulb {
   color: var(--accent);
 }
 
+.project-year {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: var(--ff-sans);
+  margin: 0.5rem 0 0.75rem 0;
+  font-weight: 500;
+}
+
+.project-publisher {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-family: var(--ff-sans);
+  margin: 0.25rem 0 0.75rem 0;
+  font-weight: 500;
+}
+
 /* --- Teaching --- */
 .teaching-list {
   display: flex;
@@ -649,4 +665,50 @@ hr.divider {
 .hero,
 .section {
   animation: fadeUp 0.6s ease both;
+}
+
+/* --- Interactive Walking Duck --- */
+/* Legacy pixel-art duck removed; GIF-based duck is used instead */
+
+/* GIF / Image-based walking duck placed under the contact address block */
+#contact .contact-grid {
+  position: relative;
+}
+
+.walking-duck-gif {
+  position: absolute;
+  bottom: -6px;
+  left: 20px;
+  width: 96px;
+  z-index: 9999;
+  pointer-events: auto;
+  animation: duck-walk-flip 10s linear infinite;
+  animation-direction: reverse;
+}
+
+@keyframes duck-walk-flip {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  49% {
+    transform: translateX(calc(100% - 140px)) scaleX(1);
+  }
+  50% {
+    transform: translateX(calc(100% - 140px)) scaleX(-1);
+  }
+  99% {
+    transform: translateX(0) scaleX(-1);
+  }
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+.walking-duck-gif.paused {
+  animation-play-state: paused;
+}
+
+.walking-duck-gif.frozen {
+  opacity: 0.6;
+  transition: opacity 0.15s linear;
 }
